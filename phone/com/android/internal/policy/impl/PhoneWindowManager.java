@@ -2054,7 +2054,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                             || (handled && code != KeyEvent.KEYCODE_POWER)
                             || (handled && hungUp && code == KeyEvent.KEYCODE_POWER)) {
                         mShouldTurnOffOnKeyUp = false;
-                    } else if (!keyguardActive) {
+                    } else {
                         // only try to turn off the screen if we didn't already hang up
                         mShouldTurnOffOnKeyUp = true;
                         mHandler.postDelayed(mPowerLongPress,
