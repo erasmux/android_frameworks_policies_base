@@ -135,7 +135,7 @@ class LockScreen extends LinearLayout implements KeyguardScreen, KeyguardUpdateM
     private String mMessagingTabApp = (Settings.System.getString(mContext.getContentResolver(),
          Settings.System.LOCKSCREEN_MESSAGING_TAB_APP));
     private int mLockscreenStyle = (Settings.System.getInt(mContext.getContentResolver(),
-         Settings.System.LOCKSCREEN_STYLE_PREF, 1));
+         Settings.System.LOCKSCREEN_STYLE_PREF, 2));
     private boolean mUseRotaryLockscreen = (mLockscreenStyle == 2);
     private double mGestureSensitivity;
     private boolean mGestureTrail;
